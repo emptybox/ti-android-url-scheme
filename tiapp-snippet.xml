@@ -1,0 +1,18 @@
+<android xmlns:android="http://schemas.android.com/apk/res/android">
+        <manifest android:versionCode="1" android:versionName="1.0">
+            <application android:label="Collectiv" android:theme="@style/Theme.Titanium">
+                <activity android:label="Collectiv" android:name=".CollectivActivity" url="ApplicationLoader.js" android:launchMode="singleTask" android:alwaysRetainTaskState="true">
+                    <intent-filter>
+                        <action android:name="android.intent.action.MAIN"/>
+                        <category android:name="android.intent.category.LAUNCHER"/>
+                    </intent-filter>
+                    <intent-filter>
+                        <data android:scheme="collectiv"/>
+                        <action android:name="android.intent.action.VIEW"/>
+                        <category android:name="android.intent.category.BROWSABLE"/>
+                        <category android:name="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+                </activity>
+            </application>
+        </manifest>
+    </android>
